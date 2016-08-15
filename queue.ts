@@ -1,4 +1,4 @@
-export class Queue {
+export default class Queue {
 
   array : any[];
   head: number;
@@ -47,11 +47,3 @@ export class Queue {
     return `[${this.array.toString()}]`;
   }
 }
-
-let newQ = new Queue();
-newQ.enqueue(1);
-console.log(newQ.toString());
-newQ.enqueue(2);
-console.log(newQ.toString());
-console.log(newQ.peek());
-console.log(newQ.dequeue());

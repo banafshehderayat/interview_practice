@@ -1,4 +1,4 @@
-class Node {
+export class Node {
   data : any;
   nextNode : Node;
   constructor(data){
@@ -23,7 +23,7 @@ class Node {
   }
 }
 
-export class LinkedList {
+export default class LinkedList {
   length : number;
   head : Node;
   constructor(){
@@ -64,7 +64,7 @@ export class LinkedList {
     if (this.head != null){
       let temp = this.head;
       this.head = this.head.getNextNode();
-      length--;
+      this.length--;
       return temp;
     } else {
       throw "Head is null."

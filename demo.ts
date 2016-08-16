@@ -1,6 +1,7 @@
 import Queue from './queue';
 import LinkedList from './linkedList';
 import {Node} from './linkedList';
+import Stack from './stack';
 
 console.log('Queue Demo:');
 let newQ = new Queue();
@@ -21,3 +22,17 @@ newLL.addNodeAtHead(newNode);
 console.log(newLL);
 console.log(newLL.deleteHead());
 console.log(newLL);
+
+
+console.log('Stack Demo:');
+let newStack = new Stack();
+newStack.push(1);
+console.log(newStack.toString());
+newStack.push(2);
+console.log(newStack.toString());
+console.log(newStack.pop());
+newStack.push(3);
+console.log(newStack.toString());
+console.log(newStack.pop());
+console.log(newStack.peek());
+console.log(newStack.toString());
